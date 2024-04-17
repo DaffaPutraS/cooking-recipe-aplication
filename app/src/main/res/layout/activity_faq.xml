@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaProfile.FAQ"
+    android:background="@drawable/bg_home2">
+
+    <!-- Arrow Left -->
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <!-- Titlle FAQ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAQ"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="70dp"/>
+
+
+    <!-- Srcll View FAQ -->
+    <ScrollView
+        android:layout_below="@+id/arrow_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <!-- Text contents of FAQ -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How do I search for a recipe in the app?"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• You can use the search bar located at the top of the feeds screen. Type in the name of the dish or the main ingredient you want to use."
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/verdana"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Can I save recipes to my favorites?"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Yes, you can save recipes to your favorites by clicking the heart icon on the recipe page."
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/verdana"/>
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Can I add my own note to the app?"-->
+<!--                android:fontFamily="@font/inter_bold"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="@color/black"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="• Yes, you can add your own note by clicking the 'new note' button on the notes screen. You will be prompted to fill out the note details."-->
+<!--                android:textSize="15sp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/verdana"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How often are new recipes added to the app?"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• New recipes are added to the app regularly, usually on a weekly or monthly basis. You can check the 'new recipes' section on the home screen to see the latest additions."
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/verdana"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

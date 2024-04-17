@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Pan_Seared_Salmon_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_pan_seared_salmon_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+    <ImageView
+        android:id="@+id/imageview_pan_seared_salmon_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pan_seared_salmon"
+        android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pan Seared Salmon"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_pan_seared_salmon_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_pan_seared_salmon_food_detail"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textview_ingredients_title_pan_seared_salmon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredients"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textview_ingredients_pan_seared_salmon_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• 4 salmon fillets (skin on)"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="16sp"
+        android:layout_below="@+id/textview_ingredients_title_pan_seared_salmon"
+        android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_pan_seared_salmon_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Salt and black pepper"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_pan_seared_salmon_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_pan_seared_salmon_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 tbsp olive oil"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_pan_seared_salmon_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_pan_seared_salmon_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 tbsp butter"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_pan_seared_salmon_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_pan_seared_salmon_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 cloves garlic, minced"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_pan_seared_salmon_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_pan_seared_salmon_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tbsp chopped fresh parsley"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_pan_seared_salmon_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_pan_seared_salmon_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Lemon wedges, for serving"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_pan_seared_salmon_6" />
+
+            <TextView
+                android:id="@+id/textview_steps_title_pan_seared_salmon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_pan_seared_salmon_7"
+                android:layout_alignStart="@+id/textview_ingredients_pan_seared_salmon_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_pan_seared_salmon_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Pat the salmon fillets dry with paper towels and season both sides with salt and black pepper."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_pan_seared_salmon"
+                android:layout_alignStart="@+id/textview_steps_title_pan_seared_salmon"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_pan_seared_salmon_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Heat the olive oil in a large nonstick skillet over medium-high heat."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_pan_seared_salmon_1"
+                android:layout_alignStart="@+id/textview_steps_title_pan_seared_salmon"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_pan_seared_salmon_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Add the salmon fillets, skin side down, to the skillet and cook for about 4-5 minutes until the skin is crispy and browned."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_pan_seared_salmon_2"
+                android:layout_alignStart="@+id/textview_steps_title_pan_seared_salmon"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_pan_seared_salmon_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Flip the salmon fillets over and continue cooking for another 2-3 minutes until the flesh is cooked through."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_pan_seared_salmon_3"
+                android:layout_alignStart="@+id/textview_steps_title_pan_seared_salmon"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_pan_seared_salmon_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Remove the salmon fillets from the skillet and set aside on a plate."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_pan_seared_salmon_4"
+                android:layout_alignStart="@+id/textview_steps_title_pan_seared_salmon"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_pan_seared_salmon_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Reduce the heat to medium and add the butter to the skillet. Once melted, add the minced garlic and sauté for about 30 seconds until fragrant."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_pan_seared_salmon_5"
+                android:layout_alignStart="@+id/textview_steps_title_pan_seared_salmon"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_pan_seared_salmon_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Pour the garlic butter over the salmon fillets."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_pan_seared_salmon_6"
+                android:layout_alignStart="@+id/textview_steps_title_pan_seared_salmon"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_pan_seared_salmon_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8 Garnish the salmon fillets with chopped parsley and serve with lemon wedges on the side."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_pan_seared_salmon_7"
+                android:layout_alignStart="@+id/textview_steps_title_pan_seared_salmon"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

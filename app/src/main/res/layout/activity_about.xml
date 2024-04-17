@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaProfile.About"
+    android:background="@drawable/bg_home2">
+
+    <!-- Arrow Left -->
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <!-- Tittle About -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="70dp"/>
+
+
+    <!-- Scroll View About -->
+    <ScrollView
+        android:layout_below="@+id/arrow_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <!-- Text What is cooking Recipe -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is Cooking Recipe?"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="15dp"
+                android:textSize="19sp"
+                android:textColor="@color/black"/>
+
+            <!-- Text contents of about -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooking Recipe is a company that focuses on developing and providing applications that make it easy for users to find, share, and create recipes. These apps are typically available as a mobile app or website, and offer features such as recipe search, creation of shopping lists, planning menus, and the ability to share recipes and cooking experiences with other users."
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/verdana"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The goal of the recipe app company is to make cooking easier, fun and accessible for everyone. By providing an easy-to-use platform and enabling users to connect with others with similar interests, the company is helping to encourage home cooking habits and broaden the knowledge of cooking around the world."
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/verdana"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The demand for recipe apps has grown rapidly, as more and more people look for ways to cook healthy and delicious meals at home. The rise of the internet and social media has also contributed to the popularity of recipe apps, as people are increasingly turning to online sources for inspiration and guidance in the kitchen."
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/verdana"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One of the key benefits of recipe apps is the ability to easily search for and discover new recipes. Users can search for recipes based on ingredients, cuisine, cooking method, or dietary restrictions, and can browse through a vast collection of recipes from around the world. Recipe apps often also include features such as ratings, reviews, and comments from other users, which can help users make informed decisions about which recipes to try."
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/verdana"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In addition to recipe discovery, many recipe apps also offer features such as meal planning, grocery list creation, and nutrition tracking. These features can help users stay organized and make healthy eating more convenient and achievable. Some recipe apps also offer premium features, such as access to exclusive recipes or personalized meal plans, for a fee."
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/verdana"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall, the goal of recipe app companies is to make cooking more accessible, enjoyable, and convenient for everyone. By providing a platform that simplifies the cooking process and fosters a community of food lovers, these companies are helping to inspire a new generation of home cooks and promote healthy eating habits around the world."
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/verdana"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

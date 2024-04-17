@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaProfile.PrivacyPolicy"
+    android:background="@drawable/bg_home2">
+
+    <!-- Arrow Left -->
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <!-- Titlle Privacy and Policy -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy and Policy"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="70dp"/>
+
+
+    <!-- Scrool View Privacy and Policy -->
+    <ScrollView
+        android:layout_below="@+id/arrow_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+            <!-- Text Privacy Policy for Cooking Recipe Application -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy for Cooking Recipe Application"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <!-- Text contents of privacy and policy -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We take the privacy of our users seriously and are committed to protecting their personal information. This privacy policy outlines how we collect, use, and protect the personal information of users of our cooking recipe application."
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/verdana"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Information We Collect"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/verdana"
+                android:textColor="#272727"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We collect personal information from users when they register for an account, submit a recipe, or use certain features of our application.The personal information we collect may include:"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Name and email address"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Location information"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• User-generated content, such as recipes or reviews"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How We Use Personal Information"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/verdana"
+                android:textColor="#272727"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We use personal information to provide and improve our services, to personalize the user experience, and to communicate with users. Specifically, we may use personal information to:"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Provide recipe recommendations based on user preferences"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Respond to user inquiries or requests"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Improve the functionality of our applicationts"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Analyze user behavior to understand trends and preferences"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How We Protect Personal Information"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/verdana"
+                android:textColor="#272727"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We take reasonable measures to protect the personal information of our users from unauthorized access, use, and disclosure. We use industry-standard security protocols to encrypt and protect data, and we restrict access to personal information to authorized personnel only."
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/verdana"
+                android:textColor="#272727"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you have any questions or concerns about our privacy policy or the personal information we collect, please contact us at [cooking.recipe99999@gmail.com]."
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/verdana" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

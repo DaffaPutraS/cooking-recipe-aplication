@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Grilled_Pizza_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_grilled_pizza_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_grilled_pizza_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grilled_pizza"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grilled Pizza"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_grilled_pizza_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_grilled_pizza_food_detail"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_grilled_pizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_grilled_pizza_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Pizza dough"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_grilled_pizza"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_grilled_pizza_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Olive oil"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_grilled_pizza_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_grilled_pizza_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Pizza sauce"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_grilled_pizza_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_grilled_pizza_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Mozzarella cheese, shredded"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_grilled_pizza_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_grilled_pizza_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Toppings of your choice (e.g. sliced tomatoes, cooked sausage, sliced onions, sliced peppers, etc.)"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_grilled_pizza_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_grilled_pizza_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Salt and black pepper"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_grilled_pizza_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_grilled_pizza_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Flour or cornmeal for dusting"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_grilled_pizza_6" />
+
+            <TextView
+                android:id="@+id/textview_steps_title_grilled_pizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_grilled_pizza_7"
+                android:layout_alignStart="@+id/textview_ingredients_grilled_pizza_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Preheat your grill to medium-high heat (about 400-450°F/200-230°C)."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_grilled_pizza"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Divide the pizza dough into portions, and roll out each portion into a thin, round shape."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_1"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Brush both sides of the pizza dough with olive oil."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_2"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Sprinkle a bit of flour or cornmeal onto a baking sheet, and place the pizza dough rounds onto the sheet."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_3"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Once the grill is hot, use tongs to carefully place the pizza dough rounds onto the grill grates."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_4"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Cook the pizza dough for about 2-3 minutes on one side, or until it starts to form grill marks and is slightly browned."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_5"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Use tongs to flip the pizza dough over and reduce the heat to low."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_6"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Add pizza sauce, shredded mozzarella cheese, and your desired toppings onto the cooked side of the pizza."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_7"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 9. Sprinkle some salt and black pepper over the toppings."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_8"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 10. Close the lid of the grill and let the pizza cook for another 5-6 minutes, or until the cheese is melted and bubbly and the crust is crispy."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_9"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 11. Use tongs to remove the pizza from the grill and let it rest for a minute or two."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_10"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_grilled_pizza_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 12. Slice the pizza and serve it hot."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_grilled_pizza_11"
+                android:layout_alignStart="@+id/textview_steps_title_grilled_pizza"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

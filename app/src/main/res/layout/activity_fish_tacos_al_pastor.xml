@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Fish_Tacos_al_Pastor_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_fish_tacos_al_pastor_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_fish_tacos_al_pastor_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fish_tacos_al_pastor"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fish Tacos al Pastor"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_fish_tacos_al_pastor_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_fish_tacos_al_pastor_food_detail"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_fish_tacos_al_pastor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the marinade:"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_fish_tacos_al_pastor"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 cloves garlic, minced"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 tbsp achiote paste"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp smoked paprika"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp ground cumin."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp dried oregano"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp salt"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_6" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 tsp black pepper"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_7" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup pineapple juice"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_8" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup orange juice"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_9" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup lime juice"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_10" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the tacos:"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_11" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 lb firm white fish, such as mahi mahi or cod, cut into bite-sized pieces"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_12" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 8-10 small corn tortillas"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_13" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 cup diced pineapple"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_14" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 cup diced red onion"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_15" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup chopped fresh cilantro"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_16" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_fish_tacos_al_pastor_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Lime wedges, for serving"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_17" />
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_fish_tacos_al_pastor_18"
+                android:layout_alignStart="@+id/textview_ingredients_fish_tacos_al_pastor_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_fish_tacos_al_pastor_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. In a large bowl, whisk together the minced garlic, achiote paste, smoked paprika, cumin, oregano, salt, and black pepper until combined."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_alignStart="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_fish_tacos_al_pastor_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Add the pineapple juice, orange juice, and lime juice to the bowl and whisk again until well combined."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_fish_tacos_al_pastor_1"
+                android:layout_alignStart="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_fish_tacos_al_pastor_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Add the fish pieces to the marinade and toss to coat well. Cover and refrigerate for at least 1 hour, or up to 4 hours."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_fish_tacos_al_pastor_2"
+                android:layout_alignStart="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_fish_tacos_al_pastor_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Preheat a grill or grill pan to medium-high heat."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_fish_tacos_al_pastor_3"
+                android:layout_alignStart="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_fish_tacos_al_pastor_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Remove the fish from the marinade and discard the remaining marinade."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_fish_tacos_al_pastor_4"
+                android:layout_alignStart="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_fish_tacos_al_pastor_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Grill the fish pieces for 3-4 minutes per side, or until cooked through and lightly charred."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_fish_tacos_al_pastor_5"
+                android:layout_alignStart="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_fish_tacos_al_pastor_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Warm the corn tortillas on the grill for about 30 seconds per side."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_fish_tacos_al_pastor_6"
+                android:layout_alignStart="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_fish_tacos_al_pastor_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Assemble the tacos by placing some fish pieces onto each tortilla."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_fish_tacos_al_pastor_7"
+                android:layout_alignStart="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_fish_tacos_al_pastor_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 9. Top the fish with diced pineapple, diced red onion, and chopped cilantro."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_fish_tacos_al_pastor_8"
+                android:layout_alignStart="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_fish_tacos_al_pastor_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 10. Serve the tacos hot with lime wedges on the side."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_fish_tacos_al_pastor_9"
+                android:layout_alignStart="@+id/textview_steps_title_fish_tacos_al_pastor"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

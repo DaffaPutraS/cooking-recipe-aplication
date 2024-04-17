@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context=".AjaActivity.PostDetailActivity">
+
+
+<RelativeLayout
+    android:id="@+id/relative_detail_image"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:background="#858585">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img_imageview_postdetail"
+        android:layout_gravity="center"
+        android:src="@drawable/fish_tacos_al_pastor"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/txt_title_postdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/margarine"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="12dp"
+        android:text="Title"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+</RelativeLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageview_favorite_food_detail"-->
+<!--        android:layout_width="28dp"-->
+<!--        android:layout_height="28dp"-->
+<!--        android:background="@drawable/favorite_hover"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_below="@+id/relative_detail_image"/>-->
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/relative_detail_image"/>
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_ingredients_postdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Ingredients"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+
+            <TextView
+                android:id="@+id/txt_ingredientstext_postdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="- ingredients"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_regular"
+                android:layout_below="@+id/txt_ingredients_postdetail"/>
+
+
+            <TextView
+                android:id="@+id/txt_steps_postdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Steps"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:layout_below="@+id/txt_ingredientstext_postdetail"/>
+
+
+            <TextView
+                android:id="@+id/txt_stepstext_postdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="- steps"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_regular"
+                android:layout_below="@+id/txt_steps_postdetail"/>
+
+            <TextView
+                android:id="@+id/txt_admin_postdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Admin"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:layout_below="@+id/txt_stepstext_postdetail"/>
+
+
+            <TextView
+                android:id="@+id/txt_admintext_postdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="- Admin"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/white"
+                android:layout_below="@+id/txt_admin_postdetail"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

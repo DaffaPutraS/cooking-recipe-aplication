@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AjaActivity.HomeActivity"
+    android:background="@drawable/bg_home2">
+
+    <TextView
+        android:id="@+id/textview_welcome_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/margarine"
+        android:text="Welcome to"
+        android:textColor="@color/white"
+        android:textSize="21dp" />
+
+    <ImageView
+        android:id="@+id/imageview_logo_home"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:src="@drawable/logo_transparan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/textview_welcome_to"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background_white_home"
+        android:layout_below="@+id/imageview_logo_home"
+        android:background="@drawable/custom_shape_bg_home">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="20000dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/textview_recomended_for_you"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recomended for you"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/verdana_bold"
+                    android:layout_alignParentLeft="true" />
+                <!-- Pan Sared Salmon -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_pan_seared_salmon"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="6dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp"
+                    android:layout_below="@+id/textview_recomended_for_you">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/pan_seared_salmon"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pan Sared Salmon"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Grilled Pizza -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_grilled_pizza"
+                    android:layout_width="170dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@id/cardview_pan_seared_salmon"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/cardview_fish_tacos_al_pastor"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/grilled_pizza" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Grilled Pizza"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Fish Tacos al Pastor -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_fish_tacos_al_pastor"
+                    android:layout_width="170dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@id/cardview_pan_seared_salmon"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fish_tacos_al_pastor"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fish Tacos al Pastor"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_gravity="center"
+                        android:textSize="14dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textview_dessert_recipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardview_fish_tacos_al_pastor"
+                    android:text="Dessert Recipe"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/verdana_bold"
+                    android:layout_marginTop="14dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridview_grid1_home"
+                    android:numColumns="3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textview_dessert_recipe"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="4dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_simple_under_30_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simple Under 30 Minute"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/verdana_bold"
+                    android:layout_below="@id/gridview_grid1_home"
+                    android:layout_alignStart="@+id/textview_dessert_recipe"
+                    android:layout_marginTop="15dp"/>
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridview_grid2_home"
+                    android:numColumns="3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textview_simple_under_30_minute"
+                    android:layout_marginBottom="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="4dp"/>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/color_navbar">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19999999"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533"
+            app:srcCompat="@drawable/ic_feeds" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533"
+            app:srcCompat="@drawable/ic_bookmark_nav" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="52dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533"
+            app:srcCompat="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.0"
+            android:textColor="@color/white"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
